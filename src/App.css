@@ -1,4 +1,6 @@
 
+
+
 nav {
   position:fixed;
   top:0;
@@ -34,6 +36,8 @@ nav img{
   
 }
 
+
+
 li
 {
   display: inline;
@@ -46,12 +50,16 @@ li
 nav ul{
   display:flex;
   
+  align-content:space-between;
+  margin-bottom: 10px;
+  
 }
 nav a{
   color:black;
   text-decoration: none;
   margin-bottom: 200px;
   margin-top:0px;
+  align-content: space-between;
   
 }
 
@@ -64,13 +72,29 @@ nav a{
 }
 .nav-link3
 {
-  padding-right: 0px;
+  padding-right: -1px;
+  margin-right: -100px;
 }
 .navDiv
 {
+  width:100%;
   border-radius: 25px;
   border-width: 2px;
   border-color: black;
   border-style:solid;
 }
 
+@media (max-width: 900px) {
+ 
+  li
+  {
+    width:50%;
+    display:list-item;
+    font-size:30px;
+    padding: 5px;
+    margin: 5px;
+    
+  }
+
+
+}
