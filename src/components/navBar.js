@@ -1,13 +1,17 @@
 import {Link, NavLink} from 'react-router-dom';
+import React from "react";
+
+
 export function NavBar()
 {
+  
   return (
     
     <nav>
     <div class="navDiv">
       <ul>
           <li>
-              <NavLink class="image1" push to="/"><img src="images/logo.png"/></NavLink>
+              <NavLink push to="/"><img src="images/logo.png"class="image1"/></NavLink>
           </li>
           
           <li>
@@ -19,10 +23,12 @@ export function NavBar()
           <li>
               <NavLink class='nav-link nav-link3' push to="/">Expert</NavLink>
           </li>
-          
           <li>
-          
+              <NavLink  push to="/"><img class="image2"src="images/plant.png"/></NavLink>
           </li>
+          
+          
+          
       </ul>
     </div>
 </nav>

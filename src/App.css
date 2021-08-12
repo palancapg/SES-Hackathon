@@ -1,50 +1,76 @@
-
+* {
+  box-sizing: border-box;
+}
 
 
 nav {
   position:fixed;
   top:0;
   left:0;
+  right: 0;
   width:100%;
   padding:0.75rem 0.75rem 0;
   z-index: 300;
   display:inline;
-  
-  
 }
-nav img{
-  width: 200px;
-  height: 80px;
+
+.image1{
+  width: 400px;
+  height: 120px;
   padding-right: 20%;
   padding-top: 10px;
+  margin-bottom:-10px;
+  position: relative;
+  top:-25px;
+  left:20px;
 
   
+}
+.image2
+{
+  width:75px;
+  height:100px;
+  position: relative;
+  top:-20px;
+  right:-140px;
 }
 
 
 .nav-link
 {
-  font-size: 30px;
+  position: relative;
+  top:25px;
+  right:30px;
+}
+
+.nav-link:hover
+{
+  /* font-size: 30px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding-right: 15px;
   padding-left: 200px;
   padding-bottom: 200px;
   margin-bottom: 200px;
-  margin-left: 200px;
-  
-
-  
+  margin-left: 200px; */
+  background-color:#cccfbd;
+  padding-top:20px;
+  padding-bottom:70px;
+  padding-left:20px;
+  padding-right:20px;
+    
 }
-
-
 
 li
 {
+  flex-direction: row;
+  flex-grow: 1;
   display: inline;
-  font-size:60px;
-  padding: 0 0 0;
+  font-size:30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px;
   margin: 0;
   text-decoration: none;
+  padding-top:50px;
   
 }
 nav ul{
@@ -84,17 +110,3 @@ nav a{
   border-style:solid;
 }
 
-@media (max-width: 900px) {
- 
-  li
-  {
-    width:50%;
-    display:list-item;
-    font-size:30px;
-    padding: 5px;
-    margin: 5px;
-    
-  }
-
-
-}
