@@ -51,11 +51,12 @@ export function NavBar() {
                 </div>
             </nav>
             <table className="center table">
-                <tbody>
+                <tr>
 
-                    <tr>
-                        <div className="card" onClick={() => closePopup(1)}> 
+                    <td>
+                        <div className="up card" onClick={() => closePopup(1)}> 
                             <div class="container">
+                            <img className="image" src="images/capital-one.jpg" alt="Picture of Debit Card"></img>
                                 <h4><b>What is a debit card?</b></h4> 
                             </div>
                         </div>
@@ -70,14 +71,12 @@ export function NavBar() {
                                 </div>
                                 <div className="overlay" id="transparent-overlay"></div>
                         </div>
-                    </tr>
+                    </td>
 
-                    <br></br>
-                    <br></br>
-
-                    <tr>
-                        <div className="card" onClick={() => closePopup(2)}> 
+                    <td>
+                        <div className="down card" onClick={() => closePopup(2)}> 
                             <div class="container">
+                            <img className="image" src="images/atm.png" alt="Picture of Women Using ATM"></img>
                                 <h4><b>How to use a debit card?</b></h4> 
                             </div>
                         </div>
@@ -94,14 +93,12 @@ export function NavBar() {
 
                                 <div className="overlay" id="transparent-overlay"></div>
                         </div>
-                    </tr>
+                    </td>
 
-                    <br></br>
-                    <br></br>
-
-                    <tr>
-                        <div className="card" onClick={() => closePopup(4)}> 
+                    <td>
+                        <div className="up card" onClick={() => closePopup(4)}> 
                             <div class="container">
+                            <img className="image" src="images/months.jpg" alt="Picture of Calendar"></img>
                                 <h4><b>How to check debit card history?</b></h4> 
                             </div>
                         </div>
@@ -117,14 +114,12 @@ export function NavBar() {
                                 
                                 <div className="overlay" id="transparent-overlay"></div>
                         </div>
-                    </tr>
-                    
-                    <br></br>
-                    <br></br>
-
-                    <tr>
-                        <div className="card" onClick={() => closePopup(3)}> 
+                    </td>
+                
+                    <td>
+                        <div className="down card" onClick={() => closePopup(3)}> 
                             <div class="container">
+                            <img className="image" src="images/happy kids.jpg" alt="Picture of Calendar"></img>
                                 <h4><b>Why choose a debit card?</b></h4> 
                             </div>
                         </div>
@@ -141,9 +136,9 @@ It helps teach budgeting skills because you can only spend money you currently h
                                 </div>
                                 <div className="overlay" id="transparent-overlay"></div>
                         </div>
-                    </tr>
+                    </td>
 
-                </tbody>
+                </tr>
             </table>
         </div>
 

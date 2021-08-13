@@ -59,21 +59,21 @@ li {
 
 .center{
   margin-right: auto;
-  margin-left:850px;
-  margin-top: 300px;
+  margin-left: 150px;
+  margin-top: -100px;
   display: block;
 }
+.down{
+  margin-top: 650px;
+}
 .card{
-  width: 300px;
+  width: 400px;
+  border-radius: 20px;
   height: fit-content;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  background-color: whitesmoke;
-}
-
-.table
-{
-  display:none;
+  background-color: white;
+  border-color: whitesmoke;
 }
 
 .card:hover {
