@@ -20,6 +20,12 @@ export function NavBar() {
         document.getElementById("transparent-overlay").classList.toggle("active")
     }
 
+
+    function showCard()
+    {
+        document.querySelector("table").style.display="block";
+    }
+
     return (
         <div>
             <nav>
@@ -30,7 +36,7 @@ export function NavBar() {
                         </li>
 
                         <li class='nav1'>
-                            <NavLink class='nav-link nav-link2' push to="/"><b>Beginner</b></NavLink>
+                            <NavLink class='nav-link nav-link2' push to="/"onClick={() => showCard()}><b>Beginner</b></NavLink>
                         </li>
                         <li class='nav1'>
                             <NavLink class='nav-link' push to="/"><b>Intermediate</b></NavLink>
