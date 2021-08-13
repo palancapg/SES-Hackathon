@@ -40,11 +40,12 @@ nav ul{
 
 nav a{
   display: block;
-  color: black;
+  color: white;
   padding: 5px 5px;
   text-decoration: none;
   font-size: 25px;
-  font-family: sans serif font Frutiger Italic;
+
+  /* font-family: sans serif font Frutiger Italic; */
 }
 
 li {
