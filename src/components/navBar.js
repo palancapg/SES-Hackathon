@@ -3,6 +3,11 @@ import React from "react";
 
 
 export function NavBar() {
+    
+    function closePopup(){
+        document.getElementById("lesson-Details").classList.toggle("active")
+        document.getElementById("transparent-overlay").classList.toggle("active")
+    }
 
     return (
 
@@ -31,6 +36,21 @@ export function NavBar() {
                 </ul>
             </div>
         </nav>
+        
+        <div className="center card" onClick={() => closePopup()}> 
+            <div class="container">
+                <h4><b>What is a debit card?</b></h4> 
+            </div>
+        </div>
+
+        <div className="lessonDetails">
+                <div className="popUp" id="lesson-Details" >
+                    <button data-close-button className="close-btn" onClick={() => closePopup()}>&times;</button>   
+                    <h1>Test</h1>
+                </div>
+                <div className="overlay" id="transparent-overlay"></div>
+            </div>
+        </div>
 
     );
 }
