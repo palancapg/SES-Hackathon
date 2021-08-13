@@ -39,11 +39,13 @@ export function NavBar() {
                     <h4><b>What is a debit card?</b></h4> 
                 </div>
             </div>
-
+            
             <div className="lessonDetails">
                     <div className="popUp" id="lesson-Details" >
                         <button data-close-button className="close-btn" onClick={() => closePopup()}>&times;</button>   
-                        <h1>Test</h1>
+                        <h1>What is a debit card?</h1>
+                        <t1>A debit card is associated with a checking account and they let you directly access and use the money currently in your account (unlike a credit card)
+</t1>
                     </div>
                     <div className="overlay" id="transparent-overlay"></div>
             </div>
